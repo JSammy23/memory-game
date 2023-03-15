@@ -1,15 +1,14 @@
 import React from 'react'
 
-const Card = (props) => {
+const Card = ({ title, image, shuffleCards }) => {
     
-    const title = props.title;
-    
+    const handleClick = () => {
+      shuffleCards();
+    };
 
   return (
-    <div className='card'>
-        <div className="card-img">
-
-        </div>
+    <div className='card' onClick={handleClick}>
+        <img src={image} alt="Character" className='card-img' />
         <h2 className='title'>{title}</h2>
     </div>
   )
