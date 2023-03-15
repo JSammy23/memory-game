@@ -14,6 +14,13 @@ body {
   height: 100vh;
 }
 
+header {
+  padding: 2em;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+
 /* Card Styling */
 
 .card {
@@ -43,7 +50,10 @@ body {
 /* Gameboard */
 
 .gameboard {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   gap: 2em;
   flex-wrap: wrap;
+  padding: 2em;
 }

@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Gameboard from "./components/Gameboard";
+import Header from "./components/Header";
 
 function App() {
+
+  const [score, setScore] = useState(0);
+  const [bestScore, setBestScore] = useState(0)
+  const [clickedCards, setClickedCards] = useState([]);
+
+  const handleCardClick = (title) => {
+
+    console.log('Clicked card:', title);
+
+    setClickedCards(prevClickedCards => {
+      if (prevClickedCards.includes(title)) {
+        // Game over, set best score, reset score and clickedCards
+        setScore(prevClickedCards.length)
+        setBestScore(score)
+        setScore(0)
+        return [];
+      } else {
+        // If card has not been clicked before
+        setScore(prevScore => prevScore + 1)
+        return [...prevClickedCards, title];
+      }
+    })
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Header score={score} bestScore={bestScore} />
+      <Gameboard handleCardClick={handleCardClick} />
+    </>  );
 }
 
 export default App;

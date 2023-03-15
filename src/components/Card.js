@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const Card = ({ title, image, shuffleCards }) => {
+const Card = ({ title, image, shuffleCards, onCardClick }) => {
+
+  
     
     const handleClick = () => {
       shuffleCards();
+      onCardClick(title);
     };
 
   return (

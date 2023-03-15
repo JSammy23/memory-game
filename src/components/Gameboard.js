@@ -15,7 +15,7 @@ import FlyingDuchman from '../assets/images/Flying-Duchman.webp'
 
 
 
-function Gameboard() {
+function Gameboard({ handleCardClick }) {
 
   const [cards, setCards] = useState([
     { title: 'SpongeBob SquarePants', image: Spongebob },
@@ -32,6 +32,10 @@ function Gameboard() {
     { title: 'Flying Dutchman', image: FlyingDuchman },
   ]);
 
+  
+  
+  
+
   const shuffleCards = () => {
     const shuffledCards = [...cards].sort(() => Math.random() -0.5);
     setCards(shuffledCards)
@@ -44,7 +48,8 @@ function Gameboard() {
         key={card.title}
         title={card.title}
         image={card.image}
-        shuffleCards={shuffleCards} />
+        shuffleCards={shuffleCards}
+        onCardClick={handleCardClick} />
       ))}
     </div>
   )
