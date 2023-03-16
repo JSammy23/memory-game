@@ -5,4 +5,4 @@
 
 Gain points by clicking on a character but don't click the same one twice or the game is over!
 
-## Try is live here: http://JSammy23.github.io/memory-game
+## Try it live here: http://JSammy23.github.io/memory-game
