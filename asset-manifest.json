@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/memory-game/static/css/main.9abf1d9c.css",
+    "main.js": "/memory-game/static/js/main.255c7ff5.js",
+    "static/media/Flying-Duchman.webp": "/memory-game/static/media/Flying-Duchman.4f2f6ebe9c8b62e96ab9.webp",
+    "static/media/Fish-Head.webp": "/memory-game/static/media/Fish-Head.e64dec88a1f6ff69a9e3.webp",
+    "static/media/Larry.webp": "/memory-game/static/media/Larry.c9cb20e66b53eaf36da8.webp",
+    "static/media/SpongeBob-SquarePants.webp": "/memory-game/static/media/SpongeBob-SquarePants.2e16e11f4871dd0525cb.webp",
+    "static/media/Sandy.webp": "/memory-game/static/media/Sandy.406dfc03fd845dd976c6.webp",
+    "static/media/Plankton.webp": "/memory-game/static/media/Plankton.5831bd7b2eec706a0097.webp",
+    "static/media/Gary.webp": "/memory-game/static/media/Gary.c667e1d589ec9c725d6e.webp",
+    "static/media/Mrs-Puff.webp": "/memory-game/static/media/Mrs-Puff.592dbd552ae617ddaafc.webp",
+    "static/media/Mr-Krabs.webp": "/memory-game/static/media/Mr-Krabs.d211b3ae64156a11d55e.webp",
+    "static/media/Krabby Patty.ttf": "/memory-game/static/media/Krabby Patty.a27cb810cc12580239b3.ttf",
+    "static/media/Squidward.webp": "/memory-game/static/media/Squidward.02da2847c02220864d1a.webp",
+    "static/media/Pearl.webp": "/memory-game/static/media/Pearl.53e380dfd46c5a61491c.webp",
+    "static/media/Patrick.webp": "/memory-game/static/media/Patrick.33751f10f9e0948b10c4.webp",
+    "index.html": "/memory-game/index.html",
+    "main.9abf1d9c.css.map": "/memory-game/static/css/main.9abf1d9c.css.map",
+    "main.255c7ff5.js.map": "/memory-game/static/js/main.255c7ff5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9abf1d9c.css",
+    "static/js/main.255c7ff5.js"
+  ]
+}
