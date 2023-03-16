@@ -27,6 +27,7 @@ header {
 }
 
 /* Card Styling */
+/* TODO Add hover effects and boxshadow */
 
 .card {
   display: flex;
@@ -36,7 +37,7 @@ header {
   height: 350px;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, .4);
-
+  cursor: pointer;
 }
 
 .card-img {
