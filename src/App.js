@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Gameboard from "./components/Gameboard";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
     <>
       <Header score={score} bestScore={bestScore} />
       <Gameboard handleCardClick={handleCardClick} />
+      <Footer />
     </>  );
 }
 
