@@ -46,14 +46,16 @@ function App() {
   }
 
   return (
-    <>
-      <Header score={score} bestScore={bestScore} />
-      {gameOver && <Popup title='Game Over!' message='Better luck next time!' onClick={handlePopupClose} />}
-      {score >= 12 && <Popup
-      title="You Win!" message="You clicked all 12 characters without clicking any of them twice, your memory must be great!" onClick={handleWin} />}
-      <Gameboard handleCardClick={handleCardClick} />
+    <div className="page-container">
+      <div className="content-wrap">
+        <Header score={score} bestScore={bestScore} />
+        {gameOver && <Popup title='Game Over!' message='Better luck next time!' onClick={handlePopupClose} />}
+        {score >= 12 && <Popup
+        title="You Win!" message="You clicked all 12 characters without clicking any of them twice, your memory must be great!" onClick={handleWin} />}
+        <Gameboard handleCardClick={handleCardClick} />
+      </div>
       <Footer />
-    </>  );
+    </div>  );
 }
 
 export default App;
